@@ -8,6 +8,7 @@ INSTALLATION: Download ItsASmallWorld.sml and open it using a SML IDE such as No
 
 USAGE: Test out this matchmaking, conflict resolver by creating a list of Facts about different people: what they Like (ex. Oatmeal, Chocolate, Cars) and who they Know. Create a list of rules that express conditional statements about people. For example, a Rule may be: if a person x likes Cars, then they will Know Fred. People and things are defined as Const , while any person x is considered a Var, both from the data type atom. Facts feature the words "Likes" or "Knows" followed by a list of 2 Const data types that are connected by the "Likes" or "Knows."
 
+______________________________________________________________________________________________________________________________
 EXAMPLE of Creating a Fact List:
 val factList = ref [Fact("Knows", [Const("John"), Const("Jane")]),
                     Fact("Knows", [Var("y"), Const("Bill")])];
@@ -16,7 +17,7 @@ val factList =
    Fact("Likes", [Const("Maisie"), Const("Cars")]),
    Fact("Likes", [Const("Maisie"), Const("Oatmeal")]),
    Fact("Likes", [Const("Harvey"), Var("x")])];
-   
+______________________________________________________________________________________________________________________________   
 EXAMPLE of Creating a Rule List:
 val ruleList = ref([]: rule list);
 
