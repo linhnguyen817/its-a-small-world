@@ -17,7 +17,8 @@ val factList =
    Fact("Likes", [Const("Maisie"), Const("Cars")]),
    Fact("Likes", [Const("Maisie"), Const("Oatmeal")]),
    Fact("Likes", [Const("Harvey"), Var("x")])];
-______________________________________________________________________________________________________________________________   
+
+
 EXAMPLE of Creating a Rule List:
 val ruleList = ref([]: rule list);
 
